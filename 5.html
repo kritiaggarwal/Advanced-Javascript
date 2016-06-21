@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment 5
+	</title>
+	<!-- Closure functions:
+	a. Write a closure in which outer function with a parameter is used by inner function which also has a parameter.
+	b. The operation performed by inner function is to return multiplication of both the parameters value.
+	c. Call this closure function and alert the multiplication produced by the closure. -->
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		var a1=prompt("Enter value of first variable");
+		var a2=prompt("Enter value of second variable");
+
+		
+		function outer_fun(var1,var2){
+			var res;
+			var a=var1;
+			var b=var2;
+			function inner_fun(v1,v2){
+				return v1*v2;
+			}
+			res=inner_fun(a,b);
+			alert("Multiplication of " + a + " & " + b + " is " + res);
+		}
+		outer_fun(a1,a2);
+	</script>
+
+
+</body>
+</html>

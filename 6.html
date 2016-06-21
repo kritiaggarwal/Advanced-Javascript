@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Assignment 6
+	</title>
+	<!-- Create an object type person which consists of first name, last name, e-mail and phone number properties. Using JavaScript append these properties to appropriate place in an html document. -->
+</head>
+<body>
+			
+		<script type="text/javascript">
+			function Person(lastName, firstName,email,phone){ 
+				  this.lastName = lastName; 
+				  this.firstName = firstName; 
+				  this.email = email;
+				  this.phone = phone;
+			}
+
+			function tryy(){
+				var per=new Person();
+				var fname=prompt("Enter your first Name" );
+				per.firstName=fname;
+				var lname=prompt("Enter your last name" );
+				per.last_name=lname;
+				var emal=prompt("Enter your email" );
+				per.email=emal;
+				var phone=prompt("Enter your phone" );
+				per.phone=phone;
+				document.getElementById("first_name").innerHTML =per.firstName ;
+				document.getElementById("last_name").innerHTML = per.last_name ;
+				document.getElementById("email").innerHTML = per.email ;
+				document.getElementById("phone").innerHTML = per.phone;
+							
+			}
+
+
+	    </script>
+		 	<table>
+		 		<tr> <td> First Name : </td> <td> <p id="first_name"></p> </td> </tr><br>
+		 		<tr> <td> Last Name : </td> <td> <p id="last_name"></p>  </td> </tr> <br>
+		 		<tr> <td> E-maill : </td> <td> <p id="email"></p> </td> </tr> <br>
+		 		<tr> <td> Phone : </td> <td>  <p id="phone"></p> </td> </tr> <br>
+		 		<button onclick="tryy()"> Try It </button>
+
+		 		
+		 	</table>
+
+
+</body>
+</html>
